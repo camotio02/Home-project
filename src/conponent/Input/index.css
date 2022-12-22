@@ -2,19 +2,28 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
-    width: 50%;
-    background-color: rgb(155, 151, 151);
+    justify-content: flex-start;
+    padding: 2px;
+    width: auto;
+    background-color: green;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
 .Stack-sapn-input span {
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(255, 255, 255, 0.3) 0px 18px 36px -18px inset;
 }
 
 .Stack-sapn-input .input {
     min-width: 10rem;
     max-width: 60%;
+    height: 1.3rem;
+    font-size: 16px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 

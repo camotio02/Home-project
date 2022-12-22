@@ -1,18 +1,41 @@
-.conatiner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+.titleCadastro {
     width: 100%;
-    height: 100vh;
-    background-color: gray;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: green;
+    text-transform: uppercase;
+    filter: contrast(1.2);
+}
+.cards {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    width: 95%;
+    height: 80%;
+    background: url(../../images/i-love-electro-phrase-handwritten-on-the-school-blackboard-DCM1JC.jpg);
 }
 
-.form-register-school {
+.stackButtons {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
     width: 100%;
-    height: 90%;
+}
+.logo {
+    position: fixed;
+    top: 0;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 4rem;
+    height: 4rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }

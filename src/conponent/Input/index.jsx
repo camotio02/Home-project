@@ -3,6 +3,8 @@ import { Input as Inputs, Stack } from '@mui/material'
 
 export const InputConponent = ({
     nameConponet,
+    fullWidth,
+    ...props 
 }) => {
     return (<>
         <div className='Stack-sapn-input'>
@@ -11,9 +13,9 @@ export const InputConponent = ({
                 <Inputs
                     sx={{ color: 'white' }}
                     className='input'
-                    fullWidth={true}
+                    fullWidth={fullWidth}
+                    {...props}
                 />
-                <div></div>
             </Stack>
         </div>
     </>)
