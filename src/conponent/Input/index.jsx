@@ -4,19 +4,26 @@ import { Input as Inputs, Stack } from '@mui/material'
 export const InputConponent = ({
     nameConponet,
     fullWidth,
-    ...props 
+    ID_Input,
+    style,
+    error,
+    ...props
 }) => {
     return (<>
-        <div className='Stack-sapn-input'>
-            <span>{nameConponet}</span>
-            <Stack>
+        <div
+            style={style}
+            className='Stack-sapn-input'>
+            <span className='titleInput'>{nameConponet}</span>
+            <div className='input-id'>
                 <Inputs
                     sx={{ color: 'white' }}
                     className='input'
                     fullWidth={fullWidth}
                     {...props}
                 />
-            </Stack>
+                <div className='id'>{ID_Input}</div>
+            </div>
+            <span className='error'>{error}</span>
         </div>
     </>)
 }
