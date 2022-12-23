@@ -1,0 +1,99 @@
+.loader {
+    border: 3px solid #f3f3f3;
+    /* Light grey */
+    border-top: 3px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+    margin-bottom: 2rem;
+}
+
+.loader--text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 4px;
+    animation: loading-text 9s linear;
+    margin-top: 2rem;
+}
+
+@keyframes loading-text {
+    0% {
+        width: 2rem;
+        background-color: rgb(81, 80, 80);
+        animation-duration: 9s;
+    }
+
+    5% {
+        width: 4rem;
+        background-color: rgb(201, 62, 62);
+    }
+
+    10% {
+        width: 5rem;
+        background-color: rgb(39, 168, 45);
+    }
+
+    20% {
+        width: 5rem;
+        background-color: green;
+    }
+
+    30% {
+        width: 7rem;
+        background-color: black;
+    }
+
+    35% {
+        width: 8rem;
+        background-color: rgb(81, 80, 80);
+        animation-duration: 9s;
+    }
+
+    45% {
+        width: 9rem;
+        background-color: rgb(201, 62, 62);
+    }
+
+    60% {
+        width: 11rem;
+        background-color: rgb(39, 168, 45);
+    }
+
+    75% {
+        width: 12rem;
+        background-color: green;
+    }
+
+    85% {
+        width: 12rem;
+        background-color: rgb(127, 215, 127);
+    }
+
+    90% {
+        width: 13rem;
+        background-color: black;
+    }
+
+    100% {
+        content: 'Carregando...';
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 13rem;
+        color: #3498db;
+    }
+
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
