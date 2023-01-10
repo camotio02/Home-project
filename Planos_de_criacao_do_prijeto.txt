@@ -1,0 +1,88 @@
+Planilha das informações do projeto
+
+-- Modos de como se logar:
+    _Area do aluno.
+    _Area do professor.
+    _Area dos administradores (Equipe pedagogica)
+    
+-- Quem pode fazer alterações:
+    _Aluno.
+    _Professor.
+    _Administrador
+
+--  O que vai alterar {
+    Aluno {
+        -Mudar de turma, se for maior de idade,
+            caso seja de menor tem que ter aprovação dos pais
+            ou engaregado de educação.
+
+        -Mudar de turno,se for maior de idade,
+            caso seja de menor tem que ter aprovação dos pais
+            ou engaregado de educação.
+
+        -Alteração da senha.
+    }
+    Professor {
+        -Alteração das notas.
+        -Alteração cronograma das aulas, salas, horario.
+        -Pode criar avisos com duração de 24 horas.
+        -Alteração da senha.
+    }
+    Administradores {
+        -Matricular os alunos.
+        -Gerar senhas de recuperação dos alunos.
+        -Finalizar as alterrações das notas dos alunos.
+        -Gerar as datas limites, por quando tempo os professores podem 
+            mexer com as notas dos alunos.
+        -Arguivar as informações.
+    }  
+}
+Páginas visuais do aluno {
+    login
+    cadastro
+    página inicial
+    notas
+    aulas
+    avisos
+    perfil
+    frequência
+    Número das páginas(10)
+}
+Páginas visuais do professor {
+    login
+    cadastro
+    página inicial
+    lançamento das notas
+    atualização das notas
+    criar avisos
+    frequência do professor
+    sala de presença(frequência)
+}
+Páginas visuais dos administradores {
+    modos {
+        mais para o pessoal {
+            login
+            cadastro
+            página inicial
+            perfil
+            frequência
+        }
+        100% admin {
+            salas {
+                todos as sala da escola 
+            }
+            alunos {
+                Todas as listas dos alunos
+            }
+            buscar aluno {
+                busca qualquer
+            }
+            gerações das senhas de recuperação {
+
+            }
+            envio dos dados {
+                arguivar, imprimir, salvar
+            }
+        }
+    }
+}
