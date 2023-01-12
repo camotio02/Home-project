@@ -3,7 +3,7 @@ Planilha das informações do projeto
 -- Modos de como se logar:
     _Area do aluno.
     _Area do professor.
-    _Area dos administradores (Equipe pedagogica)
+    _Area dos administradores (Equipe pedágogica)
     
 -- Quem pode fazer alterações:
     _Aluno.
