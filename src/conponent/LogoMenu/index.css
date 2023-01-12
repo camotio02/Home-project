@@ -1,0 +1,58 @@
+.LogoMenu {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 8rem;
+    top: 0;
+    left: 0;
+    background-color: green;
+}
+.iconsMenu {
+    margin-left: 3rem;
+}
+/*LINKS*/
+
+/* HOURS */
+.hours {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 20%;
+    height: 100%;
+    font-weight: 700;
+    font-size: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: greenyellow;
+    font-size: 20px;
+}
+
+.times {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    width: auto;
+    height: 40%;
+    padding: 6px;
+    background-color: rgb(237, 134, 0);
+}
+
+/* CHILDRENS */
+
+
+
+@media only screen and (max-width: 700px) {
+    body {
+visibility: hidden;
+opacity: 0;
+    }
+}
