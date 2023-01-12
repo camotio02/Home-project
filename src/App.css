@@ -49,3 +49,16 @@
 .read-the-docs {
   color: #888;
 }
+body {
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: #fff;
+}
+body::-webkit-scrollbar-thumb {
+  width: 5px;
+  background-color: green;
+  border-radius: 5rem;
+  cursor: pointer;
+}

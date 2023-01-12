@@ -1,10 +1,11 @@
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
 import './App.css'
+import { DefaultPage } from './Incio'
 import { Cadastro } from './Pages/Catasdro'
 import { IndexOrigin } from './Pages/index/indexOrigin'
 import { Login } from './Pages/Login'
 import { Dashboard } from './PagesUserLagado/HomeUserLogado/Dashboard/index'
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
 
 
@@ -12,9 +13,12 @@ function App() {
     <>
       <div className="stars"></div>
       <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<DefaultPage />} />
+        </Routes>
         <div className="App">
           <Routes>
-            <Route path='/' element={<IndexOrigin />} />
+            <Route path='/origin' element={<IndexOrigin />} />
             <Route path='/login' element={<Login />} />
             <Route path='/cadastro' element={<Cadastro />} />
           </Routes>
