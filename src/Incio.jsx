@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom'
 export const DefaultPage = () => {
     return (
         <>
-            <div className='container'>
-                <LogoMarca />
+                    <Link to='/origin'>
+            <div className='contains'>
                 <h1 className='titleOrigin'>Seja bem-vindo</h1>
                 <p className='description'>
                     É bom saber que está fazendo os seu contole de dados e alunos,
@@ -15,14 +15,11 @@ export const DefaultPage = () => {
                     seja bem vindo ao nosso programa de aprendizado, esperamos que
                     a nossa ferramenta atenda suas necessidades.
                     <br />
-                    Se deseja continuar click no botão abaixo.
+                    Se deseja continuar click em qualquer lugar aqui na tela...
                 </p>
-                <Button variant='contained'>
-                    <Link to='/origin'>
-                        Continuar
-                    </Link>
-                </Button>
+                <LogoMarca />
             </div>
+                    </Link>
         </>
     )
 }

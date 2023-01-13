@@ -12,8 +12,8 @@ import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const links = [
-    { namdeLink: 'Inicio' }, { namdeLink: 'Nossa história' }, { namdeLink: 'Informações' },
-    { namdeLink: 'Modos de entrada' }, { namdeLink: 'Logar-se' }
+    { link: '/home',namdeLink: 'Inicio' }, { link: 'historia',namdeLink: 'Nossa história' }, { link: '',namdeLink: 'Informações' },
+    { link: '',namdeLink: 'Modos de entrada' }, { link: '',namdeLink: 'Logar-se' }
 ]
 const mapImages = [
     { names: Image1 },
@@ -23,16 +23,19 @@ const mapImages = [
 export const MapsImages = ({ names }) => {
     return (
         <>
-
             <img src={names} alt="" />
-
         </>
     )
 }
-export const Links = ({ namdeLink }) => {
+export const Links = ({ namdeLink, link}) => {
     return (
         <>
-            <h2 className='linkshover'>{namdeLink}</h2>
+
+            <h2 className='linkshover'>
+                <Link to={link}>
+                    {namdeLink}
+                </Link>
+            </h2>
         </>
     )
 }
@@ -111,7 +114,7 @@ export const IndexOrigin = () => {
                 <h1>Welcome to Electronic Control School</h1>
                 <h3>Sua melhor escolha para o control
                     dos seus dados e alunos,
-                    faça o seu cadastro ou login
+                    faça o seu cadastro se não estiver cadastrado ou login
                 </h3>
             </div>
         </>

@@ -6,6 +6,7 @@ import { IndexOrigin } from './Pages/index/indexOrigin'
 import { Login } from './Pages/Login'
 import { Dashboard } from './PagesUserLagado/HomeUserLogado/Dashboard/index'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Historia } from './Pages/NossaHistoria/historia'
 function App() {
 
 
@@ -21,6 +22,7 @@ function App() {
             <Route path='/origin' element={<IndexOrigin />} />
             <Route path='/login' element={<Login />} />
             <Route path='/cadastro' element={<Cadastro />} />
+            <Route path='/historia' element={<Historia />} />
           </Routes>
           <div className="stars"></div>
         </div>

@@ -1,18 +1,19 @@
 :root {
     --backgraound: b
 }
+
 .titleOrigin {
-    position: absolute;
     display: flex;
     align-items: flex-end;
-    justify-content: center;
-    top: -2.1rem;
-
-    width: 100%;
+    justify-content: flex-start;
+    text-align: left;
+    font-family: serif;
+    text-shadow: 0.1em 0.1em 0.05em rgb(241, 108, 0);
+    width: 60%;
     height: 15rem;
-    padding-bottom: 2rem;
-    color: rgb(216, 96, 4);
+    color: rgb(241, 241, 241);
 }
+
 .description {
     color: rgb(216, 96, 4);
     display: flex;
@@ -20,18 +21,25 @@
     justify-content: center;
     text-align: left;
     width: 60%;
-    height: 50%;
-    padding: 1rem;
- 
+    height: auto;
+    padding: 10px;
+    font-family: cursive;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px rgb(78, 63, 63), -1px -1px rgb(0, 0, 0)
 }
-.container {
+
+.contains {
+    position: absolute;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: left;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
     background: url(./images/electronics-fb.jpg);
     background-position: fixed;
     background-size: 1000%;
-    background-clip: border-box;
 }
