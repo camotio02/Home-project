@@ -1,0 +1,32 @@
+.links {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 7rem;
+    padding: 10px;
+    background-color: green;
+
+}
+
+.linkshover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+    border-bottom: 5px solid rgba(234, 105, 0, 0.1);
+}
+
+.linkshover:hover {
+    transition: .5s;
+    border-bottom: 5px solid rgb(234, 105, 0);
+}
+
+.linkshover:nth-child(1) {
+    transition: .5s;
+    border-bottom: 5px solid rgb(234, 105, 0);
+}
