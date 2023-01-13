@@ -10,11 +10,8 @@ import Image3 from '../../images/NFe.png'
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { LinksPage } from '../../conponent/Links/links';
 
-const links = [
-    { link: '/home',namdeLink: 'Inicio' }, { link: 'historia',namdeLink: 'Nossa história' }, { link: '',namdeLink: 'Informações' },
-    { link: '',namdeLink: 'Modos de entrada' }, { link: '',namdeLink: 'Logar-se' }
-]
 const mapImages = [
     { names: Image1 },
     { names: Image2 },
@@ -27,18 +24,7 @@ export const MapsImages = ({ names }) => {
         </>
     )
 }
-export const Links = ({ namdeLink, link}) => {
-    return (
-        <>
 
-            <h2 className='linkshover'>
-                <Link to={link}>
-                    {namdeLink}
-                </Link>
-            </h2>
-        </>
-    )
-}
 export const IndexOrigin = () => {
     const [index, setIndex] = useState(0);
 
@@ -102,13 +88,7 @@ export const IndexOrigin = () => {
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
-                <div className='links'>
-                    {
-                        links.map((item) => (
-                            <Links key={item.title} {...item} />
-                        ))
-                    }
-                </div>
+                <LinksPage />
             </div>
             <div className='hover'>
                 <h1>Welcome to Electronic Control School</h1>
