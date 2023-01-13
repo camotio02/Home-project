@@ -7,6 +7,7 @@ import { Login } from './Pages/Login'
 import { Dashboard } from './PagesUserLagado/HomeUserLogado/Dashboard/index'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Historia } from './Pages/NossaHistoria/historia'
+import { InfoProject } from './Pages/Info/info'
 function App() {
 
 
@@ -23,6 +24,7 @@ function App() {
             <Route path='/login' element={<Login />} />
             <Route path='/cadastro' element={<Cadastro />} />
             <Route path='/historia' element={<Historia />} />
+            <Route path='/info' element={<InfoProject />} />
           </Routes>
           <div className="stars"></div>
         </div>
