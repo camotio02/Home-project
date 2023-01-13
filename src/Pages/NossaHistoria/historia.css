@@ -1,0 +1,42 @@
+.history {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+
+.pageTop {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 1rem;
+    width: 90%;
+    height: 60%;
+    padding: 1rem;
+    background-color: rgba(238, 238, 238, 0.4);
+}
+.pageTop p {
+    font-family: cursive;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 10px;
+    background-color: #fff;
+}
+.pageTop p span{
+    font-family: serif;
+    font-weight: 600;
+    font-size: 25px;
+    height: 1px;
+    padding: 10px;
+    color: green;
+  
+}
