@@ -5,8 +5,8 @@ const links = [
     { link: '/origin', namdeLink: 'Inicio' }, 
     { link: '/historia', namdeLink: 'Nossa história' }, 
     { link: '/info', namdeLink: 'Informações' },
-    { link: '', namdeLink: 'Modos de entrada' }, 
-    { link: '', namdeLink: 'Logar-se' }
+    { link: '/modosEntradas', namdeLink: 'Modos de entrada' }, 
+    { link: '/contato', namdeLink: 'Contato' }
 ]
 export const Links = ({ namdeLink,
     link,
@@ -15,13 +15,13 @@ export const Links = ({ namdeLink,
     return (
         <>
 
-            <h3 className='linkshover'
+            <h5 className='linkshover'
               
             >
                 <Link to={link}>
                     {namdeLink}
                 </Link>
-            </h3>
+            </h5>
         </>
     )
 }
