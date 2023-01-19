@@ -1,0 +1,137 @@
+.chats {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    right: 2rem;
+    bottom: 10rem;
+    background-color: var(--colorText);
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 5px;
+}
+.chatwrite {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 20rem;
+    height: 20rem;
+    left: 2rem;
+    bottom: 8rem;
+    border: 1px solid var(--colorText);
+    padding: 5px;
+}
+.span {
+    position:absolute;
+    color: red;
+    margin-top: -22rem;
+    margin-right: -1rem;
+    font-size: 2rem;
+}
+.messages {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-right: 10px;
+    gap: 1rem;
+    width: 100%;
+    height: 17rem;
+    overflow: auto;
+    margin-bottom: 10px;
+}
+.messages::-webkit-scrollbar {
+    width: 3px;
+
+}
+.messages::-webkit-scrollbar-thumb {
+   background-color: black;
+   border-radius: 10rem;
+   cursor: pointer;
+}
+.lugarMessages:nth-child(1) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+}
+.lugarMessages:nth-child(2) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    height: auto;
+}
+.lugarMessages:nth-child(2) .messageSended {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: var(--colorText) !important;
+    border-radius: 0px !important;
+    border-bottom-left-radius: 0.9rem !important;
+    border-bottom-right-radius: 0.9rem !important;
+    border-top-left-radius: 0.9rem !important;
+}
+
+.writing {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -2.2rem;
+    margin-left: -6px;
+    width: auto;
+    color: var(--colorText);
+    font-size: 1rem;
+    padding: 2px;
+    background-color: #fff;
+    border: 1px solid var(--colorText);
+    border-bottom: none;
+}
+
+.messageSended {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    max-width: 70%;
+    border-bottom-left-radius: 0.9rem;
+    border-bottom-right-radius: 0.9rem;
+    border-top-right-radius: 0.9rem;
+    font-size: 14px;
+    width: auto;
+    padding: 8px;
+    height: auto;
+    color: white;
+    font-family: serif;
+    background-color: green;
+}
+.text {
+    width: 90%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    overflow: auto;
+    padding: 5px;
+    color: black;
+}
+.text::-webkit-scrollbar {
+    width: 1px;
+}
+.inputSend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    height: 3.9rem;
+    overflow: none;
+    border: 1px solid var(--colorText);
+    padding: 10px;
+}
