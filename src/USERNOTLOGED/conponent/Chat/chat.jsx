@@ -19,19 +19,24 @@ export const Chat = () => {
         } else if (message.length === 0) {
             setWriter(!true)
         }
-
-        console.log(message)
     }
     const SendMessages = (e) => {
         e.preventDefault()
-        setMessagesSends([...messagesSends, ''])
+        setMessagesSends([...messagesSends, message])
+        setMessage('')
     }
     const showChatsBot = () => {
         setShowChat(!showChat)
     }
     const closeChatsBot = () => {
+        setMessagesSends([])
+        setMessage('')
         setShowChat(false)
     }
+    const time = new Date()
+    const hours = time.getHours()
+    const minutes = time.getMinutes()
+    const addZero = (value) => value < 10 ? `0${value}` : value
     return (
         <>
             {!showChat && <div onClick={showChatsBot} className='chats'>
@@ -41,18 +46,16 @@ export const Chat = () => {
             {showChat && <div className="chatwrite">
                 <CloseIcon onClick={closeChatsBot} className='span' />
                 <div className="messages">
-                    <div className="lugarMessages">
-                        <div className="messageSended">
-                            E ai, fala belezinha?
-                        </div>
-                    </div>
                     {messagesSends.map((mensagem, index) => (
                         <div
                             key={mensagem.title} id='I' className="lugarMessages">
                             <div
                                 className="messageSended"
                             >
-                                {`mensage ${index + 1}`}
+                                {mensagem}
+                                <span>
+                                    {`${addZero(hours)}:${addZero(minutes)}`}
+                                </span>
                             </div>
                         </div>
                     ))}

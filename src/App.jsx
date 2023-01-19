@@ -1,15 +1,15 @@
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
 import './App.css'
 import { DefaultPage } from './Incio'
-import { Cadastro } from './USERNOTLOGED/Pages/Catasdro'
 import { IndexOrigin } from './USERNOTLOGED/Pages/index/indexOrigin'
-import { Login } from './USERNOTLOGED/Pages/Login'
+// import { Login } from './USERNOTLOGED/Pages/Login'
 import { Dashboard } from './USERNOTLOGED/PagesUserLagado/HomeUserLogado/Dashboard/index'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Historia } from './USERNOTLOGED/Pages/NossaHistoria/historia'
 import { InfoProject } from './USERNOTLOGED/Pages/Info/info'
 import { ModosEntradas } from './USERNOTLOGED/Pages/ModosDeEntrada/modosLogin'
 import { Contato } from './USERNOTLOGED/Pages/Contato/contato';
+import { RegisterStudent } from './USERNOTLOGED/Pages/ModosDeEntrada/CADASTRO/Aluno/index';
 function App() {
 
 
@@ -26,11 +26,11 @@ function App() {
         <div className="App">
           {/* LOGIN */}
           <Routes>
-            <Route path='/loginStudent' element={<Login />} />
+            <Route path='/loginStudent' element={<LoginStudent />} />
           </Routes>
           {/* CADASTRO */}
           <Routes>
-            <Route path='/registerStudent' element={<Cadastro />} />
+            <Route path='/registerStudent' element={<RegisterStudent />} />
           </Routes>
           <Routes>
             <Route path='/historia' element={<Historia />} />

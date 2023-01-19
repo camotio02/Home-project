@@ -97,8 +97,10 @@
 
 .messageSended {
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    flex-wrap: wrap !important;
     text-align: left;
     max-width: 70%;
     border-bottom-left-radius: 0.9rem;
@@ -111,6 +113,12 @@
     color: white;
     font-family: serif;
     background-color: green;
+}
+.messageSended span {
+    width: 100%;
+    margin-right: -0.3rem;
+    font-size: 10px;
+    color: rgb(209, 209, 209);
 }
 .text {
     width: 90%;
