@@ -5,7 +5,7 @@ const links = [
     { link: '/origin', namdeLink: 'Inicio' }, 
     { link: '/historia', namdeLink: 'Nossa história' }, 
     { link: '/info', namdeLink: 'Informações' },
-    { link: '/modosEntradas', namdeLink: 'Modos de entrada' }, 
+    { link: '/modosEntradas', namdeLink: 'Login modes'}, 
     { link: '/contato', namdeLink: 'Contato' }
 ]
 export const Links = ({ namdeLink,
