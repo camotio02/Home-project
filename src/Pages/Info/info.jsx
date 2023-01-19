@@ -37,24 +37,27 @@ const cards = [
     {
         desc: 'FrameWork:',
         foto: Reacts,
+        nameFerramenta: 'React js, 2022'
     },
     {
         desc: 'HipperText:',
         foto: Html,
+        nameFerramenta: 'HTML5, 2022'
     },
     {
         desc: 'Styles Pages:',
         foto: Css,
+        nameFerramenta: 'CSS styles fonts'
     },
 ]
-const Cards = ({ desc, foto }) => {
+const Cards = ({ desc, foto, nameFerramenta }) => {
     return (
         <>
             <div className='wordDiv'>
                 <strong>{desc}</strong>
                 <div className="infoCriadores">
                     <img src={foto} alt="" />
-                    <div>React js, 2023</div>
+                    <div>{nameFerramenta}</div>
                 </div>
 
             </div>
