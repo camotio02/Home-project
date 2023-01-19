@@ -1,4 +1,5 @@
-import { ComponentID } from "../../Pages/Catasdro/componentID"
+
+import { ComponentID } from "../../Pages/ModosDeEntrada/CADASTRO/Aluno/componentID"
 
 export const Verification = ({
     datas,
@@ -8,7 +9,7 @@ export const Verification = ({
     return (
         <>
             <div className='itens'>
-                <ComponentID ID='NE'
+                <ComponentID ID='NA'
                     style={{
                         background: datas?.erroNameSchool ? Colors?.erro : Colors?.ok
                     }}
@@ -39,7 +40,7 @@ export const Verification = ({
                     condicional={!datas?.modulo ? 'False' : 'True'}
 
                 />
-                <ComponentID ID='CEP'
+                <ComponentID ID='CPF'
                     style={{
                         background: datas?.cep ? Colors?.erro : Colors?.ok
                     }}

@@ -2,13 +2,29 @@
 import { Stack } from '@mui/system'
 import './index.css'
 import MenuIcon from '@mui/icons-material/Menu';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Logo } from '../../conponent/Logo/logo-svg'
+import { Time } from '../Time/time';
 
 
 export const LogoMenu = () => {
+    const [time, setTime] = useState(new Date())
+    const hours = time.getHours()
+    const minutes = time.getMinutes()
+    const seconds = time.getSeconds()
+    const day = time.getDay()
+    const addZero = (value) => value < 10 ? `0${value}` : value
 
-    const [stateMenu, setStateMenu] = useState(false)
+    const very = () => {
+
+    }
+    useEffect(() => {
+        setInterval(() => {
+            setTime(new Date()), 1000
+        }
+        )
+    }, [])
+
     return (
         <>
             <div className="LogoMenu">
@@ -19,9 +35,8 @@ export const LogoMenu = () => {
                         Time Global
                     </Stack>
                     <div className="times">
-                        <div>14h</div>
-                        <div>30m</div>
-                        <div>64s</div>
+                        <Time />
+                        <span>{ }</span>
                     </div>
                 </div>
             </div>
