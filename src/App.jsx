@@ -2,7 +2,6 @@ import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
 import './App.css'
 import { DefaultPage } from './Incio'
 import { IndexOrigin } from './USERNOTLOGED/Pages/index/indexOrigin'
-// import { Login } from './USERNOTLOGED/Pages/Login'
 import { Dashboard } from './USERNOTLOGED/PagesUserLagado/HomeUserLogado/Dashboard/index'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Historia } from './USERNOTLOGED/Pages/NossaHistoria/historia'
@@ -10,6 +9,7 @@ import { InfoProject } from './USERNOTLOGED/Pages/Info/info'
 import { ModosEntradas } from './USERNOTLOGED/Pages/ModosDeEntrada/modosLogin'
 import { Contato } from './USERNOTLOGED/Pages/Contato/contato';
 import { RegisterStudent } from './USERNOTLOGED/Pages/ModosDeEntrada/CADASTRO/Aluno/index';
+import { LoginStudent } from './USERNOTLOGED/Pages/ModosDeEntrada/LOGINS/Aluno/index';
 function App() {
 
 
