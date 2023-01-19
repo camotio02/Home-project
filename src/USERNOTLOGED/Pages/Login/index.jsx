@@ -75,9 +75,9 @@ export const Login = () => {
         <>
             <LogoMarca>
             </LogoMarca>
-            <h3 className='titleCadastro'>Logar a sua escola
+            <strong className='titleCadastro'>Logar a sua escola
                 e trabalhe 4x+
-            </h3>
+            </strong>
             <Card className='cards'>
                 <InputConponent
                     value={data?.nameSchool}
@@ -141,7 +141,7 @@ export const Login = () => {
                     variant="contained"
                     color='primary'
                 >
-                    <Link to='/cadastro'>
+                    <Link to='/registerStudent'>
                         Cadastrar
                     </Link>
                 </Button>

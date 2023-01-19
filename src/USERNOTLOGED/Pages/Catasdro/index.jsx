@@ -114,7 +114,7 @@ export const Cadastro = () => {
                     variant="contained"
                     color='primary'
                 >
-                    <Link to='/login'>
+                    <Link to='/loginStudent'>
                         Logar
                     </Link>
                 </Button>
