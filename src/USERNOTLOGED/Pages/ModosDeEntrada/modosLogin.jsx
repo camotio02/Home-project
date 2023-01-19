@@ -48,7 +48,7 @@ export const ModosEntradas = () => {
                 <LogoMenu />
                 <LinksPage />
                 <Card className='cardEntrada'>
-                    <strong>Entradas</strong>
+                    <strong>Pode logar-se como:</strong>
                     <div>
 
                         {
