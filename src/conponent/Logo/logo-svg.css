@@ -35,7 +35,6 @@ strong:nth-child(2) {
     font-family: serif;
     font-size: 3rem;
     text-shadow: 3px 3px rgb(78, 63, 63), -1px -1px rgb(0, 0, 0);
-
 }
 
 strong:nth-child(3) {
