@@ -1,5 +1,5 @@
 import './Inicio.css'
-import { LogoMarca } from './conponent/LogoMarca/index'
+import { LogoMarca } from './USERNOTLOGED/conponent/LogoMarca/index'
 import { Button, Dialog, DialogContent } from '@mui/material'
 import { Stack, width } from '@mui/system'
 import { Link } from 'react-router-dom'
