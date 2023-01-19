@@ -1,0 +1,63 @@
+    .entradas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        gap: 3rem;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .cardEntrada {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(255, 136, 0) !important;
+        gap: 3rem;
+        width: 60%;
+        height: 50%;
+        color: white !important;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .cardEntrada div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        width: 90%;
+    }
+
+    .modosInfos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        cursor: pointer;
+    }
+
+    .modosInfos img {
+        width: 5rem;
+        height: 5rem;
+        border: 1px solid white;
+    }
+    .modosInfos img:hover {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 3rem;
+        background-color: #fff;
+        transition: .3s;
+        border: 5px solid green;
+    }
+
+    .modosInfos div {
+        font-weight: 800;
+        font-family: serif;
+        font-size: 2rem;
+    }
