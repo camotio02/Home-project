@@ -16,15 +16,23 @@ function App() {
   return (
     <>
       <div className="stars"></div>
+      {/* ORIGIN */}
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<DefaultPage />} />
+          <Route path='/origin' element={<IndexOrigin />} />
         </Routes>
+
         <div className="App">
+          {/* LOGIN */}
           <Routes>
-            <Route path='/origin' element={<IndexOrigin />} />
             <Route path='/login' element={<Login />} />
+          </Routes>
+          {/* CADASTRO */}
+          <Routes>
             <Route path='/cadastro' element={<Cadastro />} />
+          </Routes>
+          <Routes>
             <Route path='/historia' element={<Historia />} />
             <Route path='/info' element={<InfoProject />} />
             <Route path='/modosEntradas' element={<ModosEntradas />} />
@@ -32,7 +40,7 @@ function App() {
           </Routes>
           <div className="stars"></div>
         </div>
-        {/* Pages of User Logado */}
+        {/* LOGGED IN USER */}
         <Routes>
           <Route path='/dashboard' element={<Dashboard />} />
         </Routes>
