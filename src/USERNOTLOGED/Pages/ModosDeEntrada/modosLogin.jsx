@@ -5,29 +5,36 @@ import { Card, Stack } from '@mui/material';
 import Image1 from '../../images/teacher.webp'
 import Image2 from '../../images/student.webp'
 import Image3 from '../../images/admin1.webp'
+import { Link } from 'react-router-dom';
 
 const modos = [
     {
+        link: '/loginStudent',
         title: 'Aluno',
         avatar: Image2
     },
     {
+        link: '/loginTeacher',
         title: 'Professor',
         avatar: Image1
     },
     {
+        link: '/loginAdmin',
         title: 'Admin',
         avatar: Image3
     },
 ]
 const Modos = ({
     title,
-    avatar
+    avatar,
+    link
 }) => {
     return (
         <>
             <div className='modosInfos'>
-                <img src={avatar} alt="" />
+                <Link to={link}>
+                    <img src={avatar} alt="" />
+                </Link>
                 <div>{title}</div>
             </div>
         </>

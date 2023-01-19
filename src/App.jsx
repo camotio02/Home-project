@@ -26,11 +26,11 @@ function App() {
         <div className="App">
           {/* LOGIN */}
           <Routes>
-            <Route path='/login' element={<Login />} />
+            <Route path='/loginStudent' element={<Login />} />
           </Routes>
           {/* CADASTRO */}
           <Routes>
-            <Route path='/cadastro' element={<Cadastro />} />
+            <Route path='/registerStudent' element={<Cadastro />} />
           </Routes>
           <Routes>
             <Route path='/historia' element={<Historia />} />
