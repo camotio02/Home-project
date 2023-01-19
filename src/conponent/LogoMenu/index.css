@@ -11,6 +11,7 @@
 }
 .iconsMenu {
     margin-left: 3rem;
+    color: var(--colorText);
 }
 /*LINKS*/
 
@@ -43,7 +44,7 @@
     width: auto;
     height: 40%;
     padding: 6px;
-    background-color: rgb(237, 134, 0);
+    background-color: var(--colorText);
 }
 
 /* CHILDRENS */
