@@ -10,6 +10,8 @@ import { ModosEntradas } from './USERNOTLOGED/Pages/ModosDeEntrada/modosLogin'
 import { Contato } from './USERNOTLOGED/Pages/Contato/contato';
 import { RegisterStudent } from './USERNOTLOGED/Pages/ModosDeEntrada/CADASTRO/Aluno/index';
 import { LoginStudent } from './USERNOTLOGED/Pages/ModosDeEntrada/LOGINS/Aluno/index';
+import { LoginTeacher } from './USERNOTLOGED/Pages/ModosDeEntrada/LOGINS/Professor/prof'
+import { LoginAdmin } from './USERNOTLOGED/Pages/ModosDeEntrada/LOGINS/admins/admin';
 function App() {
 
 
@@ -27,6 +29,8 @@ function App() {
           {/* LOGIN */}
           <Routes>
             <Route path='/loginStudent' element={<LoginStudent />} />
+            <Route path='/loginTeacher' element={<LoginTeacher />} />
+            <Route path='/loginAdmin' element={<LoginAdmin />} />
           </Routes>
           {/* CADASTRO */}
           <Routes>
