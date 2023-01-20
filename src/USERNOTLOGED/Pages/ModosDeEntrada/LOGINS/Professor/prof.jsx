@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Card, Button, Dialog, DialogContent, Stack } from '@mui/material';
 import { LogoMarca } from "../../../../conponent/LogoMarca";
 import { LogoLetters } from "../admins/miniConponent";
+import { BackPage } from '../../../../conponent/backPage/back';
 export const LoginTeacher = () => {
     const [showErroDinamic, setShowErroDinamic] = useState(false)
     const [data, setData] = useState(
@@ -46,6 +47,7 @@ export const LoginTeacher = () => {
             <strong>
                 Logando como professor
             </strong>
+            <BackPage/>
             <LogoLetters/>
             <Card className='cards'>
                 <InputConponent

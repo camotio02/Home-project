@@ -5,6 +5,7 @@ import { Card, Button, Dialog, DialogContent, Stack } from '@mui/material';
 import { LogoMarca } from "../../../../conponent/LogoMarca";
 import './admin.css'
 import { LogoLetters } from "./miniConponent";
+import { BackPage } from '../../../../conponent/backPage/back';
 export const LoginAdmin = () => {
     const [showErroDinamic, setShowErroDinamic] = useState(false)
     const [data, setData] = useState(
@@ -51,6 +52,7 @@ export const LoginAdmin = () => {
             <strong>
                 Login Administrador
             </strong>
+            <BackPage/>
             <LogoLetters/>
             <Card className='cards'>
                 <InputConponent

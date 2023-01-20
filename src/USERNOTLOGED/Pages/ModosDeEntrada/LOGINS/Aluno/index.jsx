@@ -6,7 +6,7 @@ import { LogoMarca } from '../../../../conponent/LogoMarca'
 import { InputConponent } from '../../../../conponent/Input'
 import { ComponentID } from '../../CADASTRO/Aluno/componentID'
 import { LogoLetters } from '../admins/miniConponent'
-// import { ComponentID } from '../../../Catasdro/componentID'
+import { BackPage } from '../../../../conponent/backPage/back';
 export const LoginStudent = () => {
     const [showErroDinamic, setShowErroDinamic] = useState(false)
     const navigate = useNavigate()
@@ -76,6 +76,7 @@ export const LoginStudent = () => {
             <strong>
                 Logando como aluno
             </strong>
+            <BackPage/>
             <LogoLetters/>
             <Card className='cards'>
                 <InputConponent
