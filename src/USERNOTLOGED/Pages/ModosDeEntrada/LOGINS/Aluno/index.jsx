@@ -5,6 +5,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { LogoMarca } from '../../../../conponent/LogoMarca'
 import { InputConponent } from '../../../../conponent/Input'
 import { ComponentID } from '../../CADASTRO/Aluno/componentID'
+import { LogoLetters } from '../admins/miniConponent'
 // import { ComponentID } from '../../../Catasdro/componentID'
 export const LoginStudent = () => {
     const [showErroDinamic, setShowErroDinamic] = useState(false)
@@ -37,13 +38,13 @@ export const LoginStudent = () => {
     const Entrando = () => {
         let newMessage = "ERRO:\n";
         etapas()
-     
+
     }
 
     const [data, setData] = useState(
         {
-            nameSchool: '',
-            cep: ''
+            numberStudent: '',
+            cpf: ''
         }
     )
     const colors = {
@@ -58,69 +59,69 @@ export const LoginStudent = () => {
         });
     }
     const verifications = {
-        erroNameSchool: data?.nameSchool.length == null ||
-            data?.nameSchool.length < 8,
-        cep: data?.cep.length < 8 ||
-            data?.cep.length > 10,
+        errorNumberStudent: data?.numberStudent.length == null ||
+            data?.numberStudent.length < 8,
+        cpf: data?.cpf.length < 8 ||
+            data?.cpf.length > 10,
     }
     const btnVerification = {
-        background1: verifications?.erroNameSchool ? colors?.erro : colors?.ok,
-        background4: verifications?.cep ? colors?.erro : colors?.ok
+        background1: verifications?.errorNumberStudent ? colors?.erro : colors?.ok,
+        background4: verifications?.cpf ? colors?.erro : colors?.ok
     }
     const submit = Object.values(btnVerification).find(
         (item => item === colors?.erro)
     )
     return (
         <>
-            <LogoMarca>
-            </LogoMarca>
-            <strong className='titleCadastro'>
-                ENTRAR
+            <strong>
+                Logando como aluno
             </strong>
+            <LogoLetters/>
             <Card className='cards'>
                 <InputConponent
-                    value={data?.nameSchool}
+                    value={data?.numberStudent}
                     onChange={handleDatas}
-                    name='nameSchool'
-                    ID_Input='NA'
+                    name='numberStudent'
+                    ID_Input='CELL'
+                    type='number'
                     style={{
-                        background: verifications?.erroNameSchool ? colors?.erro : colors?.ok
+                        background: verifications?.errorNumberStudent ? colors?.erro : colors?.ok
                     }}
-                    nameConponet="Nome do aluno"
+                    nameConponet="Celular do aluno"
                 />
                 <InputConponent
-                    value={data?.cep}
+                    value={data?.cpf}
                     onChange={handleDatas}
-                    name='cep'
-                    nameConponet="CPF"
+                    name='cpf'
+                    nameConponet="CPF do aluno"
                     ID_Input='CPF'
                     type='number'
                     style={{
-                        background: verifications?.cep ? colors?.erro : colors?.ok
+                        background: verifications?.cpf ? colors?.erro : colors?.ok
                     }}
                 />
             </Card>
 
             <div className="itens">
-                <ComponentID ID='NA'
+                <ComponentID ID='CELL'
                     style={{
-                        background: verifications?.erroNameSchool ? colors?.erro : colors?.ok
+                        background: verifications?.errorNumberStudent ? colors?.erro : colors?.ok
                     }}
                     styleSpan={{
                         color:
-                            verifications?.erroNameSchool ? 'black' : 'white'
+                            verifications?.errorNumberStudent ? 'black' : 'white'
                     }}
-                    condicional={verifications?.erroNameSchool ? 'False' : 'True'}
+                    condicional={verifications?.errorNumberStudent ? 'False' : 'True'}
                 />
                 <ComponentID ID='CPF'
                     style={{
-                        background: verifications?.cep ? colors?.erro : colors?.ok
+                        background: verifications?.cpf ? colors?.erro : colors?.ok
                     }}
                     styleSpan={{
                         color:
-                            verifications?.cep ? 'black' : 'white'
+                            verifications?.cpf ? 'black' : 'white'
                     }}
-                    condicional={verifications?.cep ? 'False' : 'True'}
+                    condicional={verifications?.cpf ? 'False' : 'True'}
                 />
             </div>
             <div className='stackButtons'>
@@ -133,16 +134,7 @@ export const LoginStudent = () => {
                     className='ButtonComponent'
                     variant={submit ? 'disabled' : 'contained'}
                 >
-                    Submeter os dados
-                </Button>
-
-                <Button
-                    variant="contained"
-                    color='primary'
-                >
-                    <Link to='/registerStudent'>
-                        Cadastrar
-                    </Link>
+                    Submeter os dados do aluno
                 </Button>
             </div>
             <Dialog open={showErroDinamic} >

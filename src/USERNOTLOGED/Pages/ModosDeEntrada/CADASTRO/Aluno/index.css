@@ -10,11 +10,11 @@
 
 .cards {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
-    padding: 10px;
+    padding: 20px;
     width: auto;
     height: 80%;
     background: url(../../images/i-love-electro-phrase-handwritten-on-the-school-blackboard-DCM1JC.jpg);
