@@ -2,7 +2,6 @@ import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
 import './App.css'
 import { DefaultPage } from './Incio'
 import { IndexOrigin } from './USERNOTLOGED/Pages/index/indexOrigin'
-import { Dashboard } from './USERNOTLOGED/PagesUserLagado/HomeUserLogado/Dashboard/index'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Historia } from './USERNOTLOGED/Pages/NossaHistoria/historia'
 import { InfoProject } from './USERNOTLOGED/Pages/Info/info'
@@ -13,8 +12,6 @@ import { LoginStudent } from './USERNOTLOGED/Pages/ModosDeEntrada/LOGINS/Aluno/i
 import { LoginTeacher } from './USERNOTLOGED/Pages/ModosDeEntrada/LOGINS/Professor/prof'
 import { LoginAdmin } from './USERNOTLOGED/Pages/ModosDeEntrada/LOGINS/admins/admin';
 function App() {
-
-
   return (
     <>
       <div className="stars"></div>
@@ -24,7 +21,6 @@ function App() {
           <Route path='/' element={<DefaultPage />} />
           <Route path='/origin' element={<IndexOrigin />} />
         </Routes>
-
         <div className="App">
           {/* LOGIN */}
           <Routes>
@@ -46,7 +42,7 @@ function App() {
         </div>
         {/* LOGGED IN USER */}
         <Routes>
-          <Route path='/dashboard' element={<Dashboard />} />
+          
         </Routes>
       </BrowserRouter>
 
