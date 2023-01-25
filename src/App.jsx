@@ -11,6 +11,9 @@ import { RegisterStudent } from './USERNOTLOGED/Pages/ModosDeEntrada/CADASTRO/Al
 import { LoginStudent } from './USERNOTLOGED/Pages/ModosDeEntrada/LOGINS/Aluno/index';
 import { LoginTeacher } from './USERNOTLOGED/Pages/ModosDeEntrada/LOGINS/Professor/prof'
 import { LoginAdmin } from './USERNOTLOGED/Pages/ModosDeEntrada/LOGINS/admins/admin';
+import { HomePageStudent } from './USUARIOLOGADO/AcessoDoAluno/pages/Dashboard/HomePage';
+import { GradesStudent } from './USUARIOLOGADO/AcessoDoAluno/pages/Grade/gradesStudent';
+import { MainLeyout } from './USUARIOLOGADO/AcessoDoAluno/conponentAcessoAluno/MAIN/mainLeyout';
 function App() {
   return (
     <>
@@ -40,12 +43,14 @@ function App() {
           </Routes>
           <div className="stars"></div>
         </div>
-        {/* LOGGED IN USER */}
+      </BrowserRouter>
+      {/* LOGGED IN USER */}
+      <BrowserRouter>
         <Routes>
-          
+          <Route path='/homepageStudent' element={<HomePageStudent />} />
+          <Route path='/gradesStudent' element={<GradesStudent />} />
         </Routes>
       </BrowserRouter>
-
     </>
   )
 }
