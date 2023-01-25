@@ -1,0 +1,200 @@
+.dashboardStudent::before {
+    content: '';
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(#4682B4, rgb(40, 40, 40));
+}
+
+.alerts {
+    position: fixed;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 2rem;
+    top: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+.alerts:hover {
+    transition: .9s;
+    color: var(--colorText);
+}
+
+.after {
+    content: '';
+    position: fixed;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    background: #4682B4;
+}
+
+.dashboardStudent::-webkit-scrollbar {
+    width: 6px;
+}
+
+.dashboardStudent::-webkit-scrollbar-thumb {
+    border-radius: 2rem;
+    background-color: #4682B4;
+}
+
+.dashboardStudent {
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 18%;
+    background-color: rgb(207, 207, 207);
+    overflow-y: auto;
+}
+
+.student {
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    height: auto;
+}
+
+.namesUser {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: serif;
+    font-weight: 700;
+    color: white;
+}
+
+.cardsStudent {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    width: 80%;
+    min-height: 15rem;
+    height: auto;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+}
+
+.linerItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    min-height: 40%;
+    height: auto;
+    padding: 5px;
+}
+
+.BottomLinearItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30rem;
+}
+
+.arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 4rem;
+    color: green;
+}
+
+.todayClass {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 80%;
+    min-height: 8rem;
+    height: auto;
+
+}
+
+.classe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 3rem;
+    padding: 1rem;
+    background-color: rgb(183, 178, 178);
+    color: #4682B4;
+}
+
+.aulas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 6rem;
+    height: auto;
+    padding: 1rem;
+    color: gray;
+}
+
+.listaAvisos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 80%;
+    min-height: 6rem;
+    height: auto;
+}
+
+.avisos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    height: auto;
+
+}
+
+.showmore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #4682B4;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 5rem;
+}
