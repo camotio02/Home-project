@@ -1,0 +1,30 @@
+.line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+    font-weight: 700;
+}
+
+.line:nth-child(1) {
+    color: green;
+}
+.line:nth-child(2) {
+    color: red;
+}
+.line:nth-child(3) {
+    color: black;
+}
+.line:nth-child(4) span:nth-child(1){
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 4rem;
+   height: 4rem;
+   border: 4px solid #000;
+   border-top: 4px solid rgb(255, 23, 23);
+   border-radius: 2rem;
+   color: red;
+}
