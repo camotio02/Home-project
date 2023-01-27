@@ -14,6 +14,7 @@ import { LoginAdmin } from './USERNOTLOGED/Pages/ModosDeEntrada/LOGINS/admins/ad
 import { HomePageStudent } from './USUARIOLOGADO/AcessoDoAluno/pages/Dashboard/HomePage';
 import { GradesStudent } from './USUARIOLOGADO/AcessoDoAluno/pages/Grade/gradesStudent';
 import { MainLeyout } from './USUARIOLOGADO/AcessoDoAluno/conponentAcessoAluno/MAIN/mainLeyout';
+import { NotasStudent } from './USUARIOLOGADO/AcessoDoAluno/pages/Notas/notasStudent';
 function App() {
   return (
     <>
@@ -49,6 +50,7 @@ function App() {
         <Routes>
           <Route path='/homepageStudent' element={<HomePageStudent />} />
           <Route path='/gradesStudent' element={<GradesStudent />} />
+          <Route path='/notasStudent' element={<NotasStudent />} />
         </Routes>
       </BrowserRouter>
     </>

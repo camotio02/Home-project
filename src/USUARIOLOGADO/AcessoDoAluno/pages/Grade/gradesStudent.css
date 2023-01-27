@@ -9,6 +9,7 @@
     height: 100vh;
     background-color: rgb(207, 207, 207);
 }
+
 .grades::after {
     content: '';
     display: flex;
@@ -16,8 +17,9 @@
     justify-content: center;
     width: 100%;
     height: 15%;
-    background-color:#00BFFF;
+    background-color: #00BFFF;
 }
+
 .containerGrades {
     position: absolute;
     display: flex;
@@ -31,9 +33,9 @@
 
     padding: 3rem;
 }
+
 .datas {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -41,13 +43,28 @@
     color: white;
     font-weight: 800;
 }
-.datas h4 {
+
+.containerGrades .titlesgrades {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5rem;
+    color: white;
+    font-weight: 800;
+    background-color: #00BFFF;
+}
+.containerGrades .titlesgrades h4 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
-    width: 100%;
-    height: 4rem;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
     color: white;
     font-weight: 800;
 }
@@ -61,6 +78,7 @@
     color: white;
     font-weight: 800;
 }
+
 .calemdaryGrades {
     display: flex;
     flex-direction: column;

@@ -18,7 +18,7 @@ const li = [
         titles: 'Time'
     },
     {
-        link: '',
+        link: '/notasStudent',
         icon: <MenuBookIcon />,
         titles: 'Notas'
     },

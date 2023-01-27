@@ -8,17 +8,17 @@ export const GradesStudent = () => {
     return (
         <>
             <div className="grades">
-                <LinksBottom/>
+                <LinksBottom />
                 <div className='containerGrades'>
+                    <div className='titlesgrades'><h4>Grades</h4></div>
                     <Stack className="datas">
-                        <h4>Grades</h4>
                         <div>
                             Hoje, 25 de Janeiro de 2023
                             <EventIcon />
                         </div>
                     </Stack>
                     <Card className='calemdaryGrades'>
-                        <CalendaryGrades/>
+                        <CalendaryGrades />
                     </Card>
                 </div>
             </div>
