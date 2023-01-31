@@ -15,6 +15,7 @@ import { HomePageStudent } from './USUARIOLOGADO/AcessoDoAluno/pages/Dashboard/H
 import { GradesStudent } from './USUARIOLOGADO/AcessoDoAluno/pages/Grade/gradesStudent';
 import { NotasStudent } from './USUARIOLOGADO/AcessoDoAluno/pages/Notas/notasStudent';
 import { FrequenciaInDates } from './USUARIOLOGADO/AcessoDoAluno/pages/Frequencia/frequenciaStudent';
+import { MenuStudent } from './USUARIOLOGADO/AcessoDoAluno/pages/Menu/menuStudent';
 function App() {
   return (
     <>
@@ -52,6 +53,7 @@ function App() {
           <Route path='/gradesStudent' element={<GradesStudent />} />
           <Route path='/notasStudent' element={<NotasStudent />} />
           <Route path='/frequenciaInDates' element={<FrequenciaInDates />} />
+          <Route path='/menuStudent' element={<MenuStudent />} />
         </Routes>
       </BrowserRouter>
     </>
