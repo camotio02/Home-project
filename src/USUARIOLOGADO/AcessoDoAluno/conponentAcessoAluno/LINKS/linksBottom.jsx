@@ -28,7 +28,7 @@ const li = [
         titles: 'Frequência'
     },
     {
-        link: '',
+        link: '/menuStudent',
         icon: <MenuIcon />,
         titles: 'Menu'
     },
