@@ -13,8 +13,8 @@ import { LoginTeacher } from './USERNOTLOGED/Pages/ModosDeEntrada/LOGINS/Profess
 import { LoginAdmin } from './USERNOTLOGED/Pages/ModosDeEntrada/LOGINS/admins/admin';
 import { HomePageStudent } from './USUARIOLOGADO/AcessoDoAluno/pages/Dashboard/HomePage';
 import { GradesStudent } from './USUARIOLOGADO/AcessoDoAluno/pages/Grade/gradesStudent';
-import { MainLeyout } from './USUARIOLOGADO/AcessoDoAluno/conponentAcessoAluno/MAIN/mainLeyout';
 import { NotasStudent } from './USUARIOLOGADO/AcessoDoAluno/pages/Notas/notasStudent';
+import { FrequenciaInDates } from './USUARIOLOGADO/AcessoDoAluno/pages/Frequencia/frequenciaStudent';
 function App() {
   return (
     <>
@@ -51,6 +51,7 @@ function App() {
           <Route path='/homepageStudent' element={<HomePageStudent />} />
           <Route path='/gradesStudent' element={<GradesStudent />} />
           <Route path='/notasStudent' element={<NotasStudent />} />
+          <Route path='/frequenciaInDates' element={<FrequenciaInDates />} />
         </Routes>
       </BrowserRouter>
     </>
