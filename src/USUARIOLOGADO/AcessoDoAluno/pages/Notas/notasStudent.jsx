@@ -53,7 +53,7 @@ export const NotasStudent = () => {
                         </div>
                         {showNotas && <div className="infoNotas">
                             <div className='namesCampo'>
-                                <div>BIMESTRES</div>
+                                <div>PERÍODOS</div>
                                 <div>NOTAS</div>
                                 <div>FALTAS</div>
                             </div>
