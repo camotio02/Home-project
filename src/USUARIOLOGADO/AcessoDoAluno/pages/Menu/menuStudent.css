@@ -1,0 +1,132 @@
+.menuStudents {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgb(234, 234, 234);
+}
+
+.menuBar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    padding: 5%;
+    background-color: #fff;
+}
+
+.barLeft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: rgb(13, 133, 1, 0.33);
+    border-bottom: 1rem solid green;
+}
+
+.barRigth {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    gap: 5px;
+}
+
+.barRigth h4 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    font-weight: 700;
+}
+
+.barRigth h5 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    font-weight: 300;
+}
+
+.surfin {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 100%;
+    font-weight: 300;
+    color: #1294ff;
+    cursor: pointer;
+}
+
+.menuItens {
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap !important;
+    gap: 2px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    padding: 10%;
+}
+
+.itensMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 10rem;
+    height: 10rem;
+}
+
+.containIcons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    background-color: #fff;
+    border-radius: 50% !important;
+    cursor: pointer;
+}
+
+.containIcons:hover {
+    transition: .5s;
+    border: 4px solid #1294ff;
+    background-color: black;
+    color: #1294ff;
+}
+.ouvidoria {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+    border: 0.5px solid #1294ff;
+    background-color: black;
+    color: white;
+    width: 4rem;
+    height: 4rem;
+    bottom: 8rem;
+    right: 3rem;
+    cursor: pointer;
+}
