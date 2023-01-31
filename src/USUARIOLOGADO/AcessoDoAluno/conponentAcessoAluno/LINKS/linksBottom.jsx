@@ -23,7 +23,7 @@ const li = [
         titles: 'Notas'
     },
     {
-        link: '',
+        link: '/frequenciaInDates',
         icon: <CheckIcon />,
         titles: 'Frequência'
     },
