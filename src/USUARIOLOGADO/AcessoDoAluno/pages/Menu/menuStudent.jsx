@@ -17,7 +17,7 @@ const menuIntens = [
     { icon: <NotificationsIcon />, link: '/avisosStudent', titles: 'Avisos' },
     { icon: <NewspaperIcon />, link: '/noticiasStudent', titles: 'Notícias' },
     { icon: <QrCodeScannerIcon />, link: '/perfilStudent', titles: 'Perfil do aluno' },
-    { icon: <InfoIcon />, link: '', titles: 'Sobre' },
+    { icon: <InfoIcon />, link: '/about', titles: 'Sobre' },
     { icon: <ForumIcon />, link: '', titles: 'Ouvidoria' },
     { icon: <LogoutIcon />, link: '', titles: 'Sair do site' },
 ]
