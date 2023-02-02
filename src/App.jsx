@@ -20,6 +20,7 @@ import { AgendaStudent } from './USUARIOLOGADO/AcessoDoAluno/pages/Menu/pages/ag
 import { AvisosStudent } from './USUARIOLOGADO/AcessoDoAluno/pages/Menu/pages/avisos/avisos';
 import { NoticiasStudent } from './USUARIOLOGADO/AcessoDoAluno/pages/Menu/pages/noticias/noticias';
 import { PerfilStudent } from './USUARIOLOGADO/AcessoDoAluno/pages/Menu/pages/perfilAluno/perfilStudent';
+import { AboutSite } from './USUARIOLOGADO/AcessoDoAluno/pages/Menu/pages/sobre/sobre';
 function App() {
   return (
     <>
@@ -62,6 +63,7 @@ function App() {
           <Route path='/avisosStudent' element={<AvisosStudent />} />
           <Route path='/noticiasStudent' element={<NoticiasStudent />} />
           <Route path='/perfilStudent' element={<PerfilStudent />} />
+          <Route path='/about' element={<AboutSite />} />
         </Routes>
       </BrowserRouter>
     </>
