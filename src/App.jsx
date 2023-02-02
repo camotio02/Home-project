@@ -16,6 +16,10 @@ import { GradesStudent } from './USUARIOLOGADO/AcessoDoAluno/pages/Grade/gradesS
 import { NotasStudent } from './USUARIOLOGADO/AcessoDoAluno/pages/Notas/notasStudent';
 import { FrequenciaInDates } from './USUARIOLOGADO/AcessoDoAluno/pages/Frequencia/frequenciaStudent';
 import { MenuStudent } from './USUARIOLOGADO/AcessoDoAluno/pages/Menu/menuStudent';
+import { AgendaStudent } from './USUARIOLOGADO/AcessoDoAluno/pages/Menu/pages/agenda/agenda';
+import { AvisosStudent } from './USUARIOLOGADO/AcessoDoAluno/pages/Menu/pages/avisos/avisos';
+import { NoticiasStudent } from './USUARIOLOGADO/AcessoDoAluno/pages/Menu/pages/noticias/noticias';
+import { PerfilStudent } from './USUARIOLOGADO/AcessoDoAluno/pages/Menu/pages/perfilAluno/perfilStudent';
 function App() {
   return (
     <>
@@ -46,7 +50,7 @@ function App() {
           <div className="stars"></div>
         </div>
       </BrowserRouter>
-      {/* LOGGED IN USER */}
+      {/* LOGGED IN STUDENT */}
       <BrowserRouter>
         <Routes>
           <Route path='/homepageStudent' element={<HomePageStudent />} />
@@ -54,6 +58,10 @@ function App() {
           <Route path='/notasStudent' element={<NotasStudent />} />
           <Route path='/frequenciaInDates' element={<FrequenciaInDates />} />
           <Route path='/menuStudent' element={<MenuStudent />} />
+          <Route path='/agendaStudent' element={<AgendaStudent />} />
+          <Route path='/avisosStudent' element={<AvisosStudent />} />
+          <Route path='/noticiasStudent' element={<NoticiasStudent />} />
+          <Route path='/perfilStudent' element={<PerfilStudent />} />
         </Routes>
       </BrowserRouter>
     </>
