@@ -18,7 +18,7 @@ export const HomePageStudent = () => {
         setShowItens(true)
     }
     const scroolls = (scrollY) => {
-        if (documentElement.scrollY  > 0) {
+        if (documentElement.scrollY > 0) {
             setShowItens(true)
             console.log(scrollY)
         } else {
@@ -80,7 +80,7 @@ export const HomePageStudent = () => {
                         </div>
                         <div className='showmore'>Ver Todos</div>
                     </div>
-                    <LinksBottom/>
+                    <LinksBottom />
                 </div>
             </div>
         </>
