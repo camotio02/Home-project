@@ -24,9 +24,22 @@ a {
 }
 
 .stars {
-    width: 3px;
-    height: 3px;
+    width: 5px;
+    height: 5px;
     border-radius: 50%;
+}
+
+.stars2 {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.stars3 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: anima 3s linear infinite;
 }
 
 .stars {
@@ -234,6 +247,16 @@ a {
     }
 
     to {
-        transform: translateY(-150px);
+        transform: translateY(-10rem);
+    }
+}
+
+@keyframes anima {
+    from {
+        right: 0
+    }
+
+    to {
+        right: 100%
     }
 }
