@@ -11,6 +11,8 @@
 }
 
 .agenda::after {
+    top: 0;
+    left: 0;
     content: '';
     display: flex;
     align-items: center;
@@ -34,12 +36,16 @@
     padding-top: 8%;
 }
 .AgendaArrowBack {
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    height: 5%;
+    top: 0;
+    left: 0;
     gap: 20px;
     width: 100%;
-    color: #fff;
     font-weight: 900;
-    margin-bottom: 10rem;
+    padding-left: 5%;
+    background-color: #00BFFF;
 }
