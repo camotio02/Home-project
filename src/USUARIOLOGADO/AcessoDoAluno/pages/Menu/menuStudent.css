@@ -30,9 +30,9 @@
     justify-content: center;
     width: 10rem;
     height: 10rem;
-    border-radius: 50%;
-    background-color: rgb(13, 133, 1, 0.33);
+    border-radius: 50% !important;
     border-bottom: 1rem solid green;
+    border-top: 0.3px solid green;
 }
 
 .barRigth {
@@ -114,6 +114,7 @@
     background-color: black;
     color: #1294ff;
 }
+
 .ouvidoria {
     position: absolute;
     display: flex;
@@ -121,12 +122,13 @@
     align-items: center;
     justify-content: center;
     transition: .5s;
-    border: 0.5px solid #1294ff;
-    background-color: black;
+    color: #1294ff !important;
+    background-color: black !important;
     color: white;
     width: 4rem;
     height: 4rem;
-    bottom: 8rem;
+    bottom: 6rem;
     right: 3rem;
     cursor: pointer;
+    border: none !important;
 }

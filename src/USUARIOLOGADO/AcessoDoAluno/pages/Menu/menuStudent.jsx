@@ -13,10 +13,10 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import { Link } from 'react-router-dom';
 
 const menuIntens = [
-    { icon: <DateRangeIcon />, link: '', titles: 'Agenda' },
-    { icon: <NotificationsIcon />, link: '', titles: 'Avisos' },
-    { icon: <NewspaperIcon />, link: '', titles: 'Notícias' },
-    { icon: <QrCodeScannerIcon />, link: '', titles: 'Perfil do aluno' },
+    { icon: <DateRangeIcon />, link: '/agendaStudent', titles: 'Agenda' },
+    { icon: <NotificationsIcon />, link: '/avisosStudent', titles: 'Avisos' },
+    { icon: <NewspaperIcon />, link: '/noticiasStudent', titles: 'Notícias' },
+    { icon: <QrCodeScannerIcon />, link: '/perfilStudent', titles: 'Perfil do aluno' },
     { icon: <InfoIcon />, link: '', titles: 'Sobre' },
     { icon: <ForumIcon />, link: '', titles: 'Ouvidoria' },
     { icon: <LogoutIcon />, link: '', titles: 'Sair do site' },
