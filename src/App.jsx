@@ -21,6 +21,7 @@ import { AvisosStudent } from './USUARIOLOGADO/AcessoDoAluno/pages/Menu/pages/av
 import { NoticiasStudent } from './USUARIOLOGADO/AcessoDoAluno/pages/Menu/pages/noticias/noticias';
 import { PerfilStudent } from './USUARIOLOGADO/AcessoDoAluno/pages/Menu/pages/perfilAluno/perfilStudent';
 import { AboutSite } from './USUARIOLOGADO/AcessoDoAluno/pages/Menu/pages/sobre/sobre';
+import { HomePageProf } from './USUARIOLOGADO/AcessoProfessor/pages/Dashboard/HomePage';
 function App() {
   return (
     <>
@@ -64,6 +65,13 @@ function App() {
           <Route path='/noticiasStudent' element={<NoticiasStudent />} />
           <Route path='/perfilStudent' element={<PerfilStudent />} />
           <Route path='/about' element={<AboutSite />} />
+        </Routes>
+      </BrowserRouter>
+       {/* LOGGED IN PROFESSOR */}
+       <BrowserRouter>
+        <Routes>
+          <Route path='/homepageProf' element={<HomePageProf />} />
+          
         </Routes>
       </BrowserRouter>
     </>
