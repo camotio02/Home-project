@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import HomeIcon from '@mui/icons-material/Home';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
-import CheckIcon from '@mui/icons-material/Check';
+import EventAvailableIcon from '@mui/icons-material/EventAvailable';
 import MenuIcon from '@mui/icons-material/Menu';
 const li = [
     {
@@ -24,7 +24,7 @@ const li = [
     },
     {
         link: '/frequenciaInDates',
-        icon: <CheckIcon />,
+        icon: <EventAvailableIcon />,
         titles: 'Frequência'
     },
     {
