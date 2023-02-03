@@ -10,7 +10,6 @@ import { UltimosDiasFaltados } from '../../conponentAcessoAluno/ULTIMOSDIASFALTA
 import { Avisos } from '../../conponentAcessoAluno/AVISOS/avisos';
 export const HomePageStudent = () => {
     const [showItens, setShowItens] = useState(false)
-
     const closeItens = () => {
         setShowItens(false)
     }
@@ -26,7 +25,6 @@ export const HomePageStudent = () => {
             console.log(scrollY)
         }
     }
-
     return (
         <>
             <div className="dashboardStudent" onScroll={scroolls}>
@@ -40,7 +38,7 @@ export const HomePageStudent = () => {
                         </div>
                     </div>}
 
-                    <h2 className='namesUser'>Olá Nome estudante!</h2>
+                    <h2 className='namesUser'>Olá Mukhuna's!</h2>
                     <Card className='cardsStudent'>
                         <h5>Frequência</h5>
                         <div className="linerItem">
@@ -105,4 +103,4 @@ export const HomePageStudent = () => {
     //     } else {
     //         setShowItens(false)
     //     }
-    // }
+ // }
