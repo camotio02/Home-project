@@ -1,0 +1,39 @@
+:root {
+    --fundoProf: linear-gradient(#4682B4, rgb(40, 40, 40));
+}
+.containerProf {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+.logoProf {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background: var(--fundoProf);
+}
+.linksProf {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    height: 5%;
+    bottom: 0;
+    left: 0;
+    background: white;
+    border-top: 0.5px solid #000;
+}
