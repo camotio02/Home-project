@@ -8,6 +8,12 @@ import { ComponentID } from '../../CADASTRO/Aluno/componentID'
 import { LogoLetters } from '../admins/miniConponent'
 import { BackPage } from '../../../../conponent/backPage/back';
 export const LoginStudent = () => {
+    const [data, setData] = useState(
+        {
+            numberStudent: '',
+            cpf: ''
+        }
+    )
     const [showErroDinamic, setShowErroDinamic] = useState(false)
     const navigate = useNavigate()
     const momentSendDatas = {
@@ -17,36 +23,30 @@ export const LoginStudent = () => {
         quarto: 'Concluindo as etapas e entrando...'
     }
     function etapas() {
-        setTimeout(() => {
-            setShowErroDinamic(`${momentSendDatas.primeiro}`)
-        }, "1000");
-        setTimeout(() => {
-            setShowErroDinamic(`${momentSendDatas.segundo}`)
-        }, "3000");
-        setTimeout(() => {
-            setShowErroDinamic(`${momentSendDatas.terceiro}`)
-        }, "6000");
-        setTimeout(() => {
-            setShowErroDinamic(`${momentSendDatas.quarto}`)
-        }, "8000");
+        setShowErroDinamic(true)
         setTimeout(() => {
             setShowErroDinamic("");
             setShowErroDinamic(false);
-            navigate('/dashboard')
+            navigate('/notasStudent')
         }, "10000");
+    }
+    const dados = {
+        celular: 123456789,
+        cpf: 80205638902
     }
     const Entrando = () => {
         let newMessage = "ERRO:\n";
-        etapas()
+        if (
+            data?.numberStudent == dados?.celular &&
+            data?.cpf == dados?.cpf) {
+            etapas()
+        } else {
+            alert('Não está passando nas etapas')
+        }
 
     }
 
-    const [data, setData] = useState(
-        {
-            numberStudent: '',
-            cpf: ''
-        }
-    )
+
     const colors = {
         erro: 'red',
         ok: 'green'
@@ -60,9 +60,9 @@ export const LoginStudent = () => {
     }
     const verifications = {
         errorNumberStudent: data?.numberStudent.length == null ||
-            data?.numberStudent.length < 8,
-        cpf: data?.cpf.length < 8 ||
-            data?.cpf.length > 10,
+            data?.numberStudent.length < 9,
+        cpf: data?.cpf.length < 11 ||
+            data?.cpf.length > 12,
     }
     const btnVerification = {
         background1: verifications?.errorNumberStudent ? colors?.erro : colors?.ok,
@@ -76,8 +76,8 @@ export const LoginStudent = () => {
             <strong>
                 Logando como aluno
             </strong>
-            <BackPage/>
-            <LogoLetters/>
+            <BackPage />
+            <LogoLetters />
             <Card className='cards'>
                 <InputConponent
                     value={data?.numberStudent}
@@ -138,14 +138,25 @@ export const LoginStudent = () => {
                     Submeter os dados do aluno
                 </Button>
             </div>
-            <Dialog open={showErroDinamic} >
-                <DialogContent>
-                    <Stack>
-                        <div style={{ color: "red" }}>{showErroDinamic}</div>
-                        <div className="loader--text"></div>
-                    </Stack>
-                </DialogContent>
-            </Dialog>
+
+            {showErroDinamic && <div className="spiners">
+                <div className='lds-spinner'>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>}
+
+
         </>
     )
 }
