@@ -37,3 +37,11 @@
     background: white;
     border-top: 0.5px solid #000;
 }
+.centerInfoProf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    height: 70%;
+}
